@@ -1,21 +1,12 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
 # Copyright (C) 2020 TeamDerUntergang.
 #
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-#
-# Turkish word meaning. Only Turkish. Coded @By_Azade, Seden uyarlaması @qulec
-#
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# you may not use this file except in compliance with the License.
 
+"""
+Turkish word meaning. Only Turkish. Coded @By_Azade, Seden uyarlaması @qulec
+"""
 import requests
 
 from userbot import CMD_HELP
@@ -71,6 +62,6 @@ async def tdk(event):
 CMD_HELP.update({
     "sozluk":
     ".tdk <kelime> .\
-    \nKullanım: Verdiğiniz kelimeyi TDK Sözlükte arar.\n\n.tureng <kelime> .\
-    \nKullanım: Verdiğiniz kelimeyi Tureng Sözlükte arar."
+    \n**Kullanım**: Verdiğiniz kelimeyi TDK Sözlükte arar.\n\n.tureng <kelime> .\
+    \n**Kullanım**: Verdiğiniz kelimeyi Tureng Sözlükte arar."
 })

@@ -1,18 +1,11 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
 # Copyright (C) 2020 TeamDerUntergang.
 #
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# you may not use this file except in compliance with the License.
 #
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-#
+# The entire source code is OSSRPL except 'whois' which is MPL
+# License: MPL and OSSRPL
 
 """ Telegram'daki herhangi bir kullanıcı hakkında bilgi almak için UserBot modülü (sizde dahil!). """
 
@@ -30,7 +23,7 @@ from userbot.events import register
 async def who(event):
 
     await event.edit(
-        "`*Global Network Zone* ' dan bazı verileri çalarken sıkı durun...`")
+        "`*Global Network Zone* ' dan bazı veriler çalınıyor. Sıkı durun...`")
 
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)

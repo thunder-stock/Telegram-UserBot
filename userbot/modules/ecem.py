@@ -1,19 +1,9 @@
-# Copyright (C) 2020 TeamDerUntergang.
+# Copyright (C) 2020 TeamDerUntergang
 #
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-#
+# Licensed under the TeamDerUntergang Public License;
+# you may not use this file except in compliance with the License.
 
+# İnsanlarla biraz eğlenmek için Ecem modülü.
 # Sedenogen tarafından sevgi ile hazırlanmıştır.
 # NaytSeyd tarafından güçlendirilmiştir.
 
@@ -333,10 +323,6 @@ ECEM_STRINGS = [
     "Kara gözlüm ölesim var",
     "Bu bağlantıyı kimse anlamayacak sjsksksksksk",
     "Yapma yanarız",
-    "skamaksksksksksks",
-    "inşallahh bence de görelim artık",
-    "hem de nasılllll",
-    "Konumumuz belli",
     "Biraz da şerefsiz arkadaşlarımızı paylaşalım ♥️♥️♥️♥️",
     "sadece Doğum günümde yazıyorsunuz",
     "Yalansa yalan de djjdjdkdkksks",
@@ -357,5 +343,5 @@ async def ecem(e):
 CMD_HELP.update({
     "ecem":
     ".ecem veya .ecem ile birinin metnine cevap verin.\
-    \nKullanım: Ecem'den alıntılar."
+    \n**Kullanım**: Ecem'den alıntılar."
 })

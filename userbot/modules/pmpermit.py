@@ -1,17 +1,8 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
 # Copyright (C) 2020 TeamDerUntergang.
 #
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# you may not use this file except in compliance with the License.
 #
 
 """ Kimin size özel mesaj gönderebileceğini kontrol altına almanızı sağlayan UserBot modülüdür. """
@@ -26,10 +17,11 @@ from userbot import (COUNT_PM, CMD_HELP, BOTLOG, BOTLOG_CHATID,
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
-UNAPPROVED_MSG = ("`Hey! Bu bir bot. Endişelenme.\n\n`"
+UNAPPROVED_MSG = ("`Hey! Ben bir botum!\n\n`"
                   "`Sahibim sana PM atma izni vermedi. `"
                   "`Lütfen sahibimin aktif olmasını bekleyin, o genellikle PM'leri onaylar.\n\n`"
-                  "`Bildiğim kadarıyla o kafayı yemiş insanlara PM izni vermiyor.`")
+                  "`Bildiğim kadarıyla o kafayı yemiş insanlara PM izni vermiyor.`"
+                  "`Lütfen art arda mesajlar atma yoksa engelleneceksin!`")
 # =================================================================
 
 
@@ -77,8 +69,8 @@ async def permitpm(event):
 
                 if COUNT_PM[event.chat_id] > 4:
                     await event.respond(
-                        "`Sen benim sahibimin PM'ini spamlıyorsun, bu benim hoşuma gitmiyor.`\n"
-                        "`Şu an ENGELLENDIN ve SPAM olarak bildirildin, ileride değişiklik olmadığı sürece..`"
+                        "`Sana art arda mesaj atma demiştim.`\n"
+                        "`Şu an ENGELLENDIN ve SPAM olarak bildirildin, ileride değişiklik olmadığı sürece...`"
                     )
 
                     try:

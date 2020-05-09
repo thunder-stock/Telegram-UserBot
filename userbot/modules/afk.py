@@ -1,17 +1,8 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
 # Copyright (C) 2020 TeamDerUntergang.
 #
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# you may not use this file except in compliance with the License.
 #
 
 """ AFK ile ilgili komutları içeren UserBot modülü """
@@ -28,7 +19,7 @@ from userbot.events import register
 # ========================= CONSTANTS ============================
 AFKSTR = [
     "Şu an acele işim var, daha sonra mesaj atsan olmaz mı? Zaten yine geleceğim.",
-    "Aradığınız kişi şu anda telefona cevap veremiyor. Sinyal sesinden sonra kendi tarifeniz üzerinden mesajınızı bırakabilirsiniz. Mesaj ücreti 49 kuruştur. \n`biiiiiiiiiiiiiiiiiiiiiiiiiiiiip`!",
+    "#Aradığınız kişi şu anda telefona cevap veremiyor. Sinyal sesinden sonra kendi tarifeniz üzerinden mesajınızı bırakabilirsiniz. Mesaj ücreti 49 kuruştur. \n`biiiiiiiiiiiiiiiiiiiiiiiiiiiiip`!",
     "Birkaç dakika içinde geleceğim. Fakat gelmezsem...\ndaha fazla bekle.",
     "Şu an burada değilim, muhtemelen başka bir yerdeyim.",
     "Güller kırmızı\nMenekşeler mavi\nBana bir mesaj bırak\nVe sana döneceğim.",
@@ -150,7 +141,7 @@ async def type_afk_is_not_true(notafk):
     global AFKREASON
     if ISAFK:
         ISAFK = False
-        await notafk.respond("Artık AFK değilim.")
+        await notafk.respond("Artık AFK değilsiniz.")
         await sleep(2)
         if BOTLOG:
             await notafk.client.send_message(
