@@ -1,17 +1,8 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
 # Copyright (C) 2020 TeamDerUntergang.
 #
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# you may not use this file except in compliance with the License.
 #
 
 """ UserBot başlangıç noktası """
@@ -44,9 +35,9 @@ except PhoneNumberInvalidError:
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
+LOGS.info("Bot çalışır durumda! Herhangi bir sohbete .alive yazarak test edin."
           " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/SedenUserBotSupport")
-LOGS.info("Bot sürümünüz Seden v2.5")
+LOGS.info("Bot sürümünüz Seden v2.0")
 
 """
 if len(argv) not in (1, 3, 4):
