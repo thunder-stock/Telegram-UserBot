@@ -37,7 +37,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info("Bot çalışır durumda! Herhangi bir sohbete .alive yazarak test edin."
           " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/SedenUserBotSupport")
-LOGS.info("Bot sürümünüz Seden v2.0")
+LOGS.info("Bot sürümünüz Seden v2.0 but thunder fan edition.")
 
 """
 if len(argv) not in (1, 3, 4):
