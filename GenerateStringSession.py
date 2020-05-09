@@ -7,10 +7,10 @@
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 
-print("""Lütfen my.telegram.org adresine gidin
-Telegram hesabınızı kullanarak giriş yapın
-API Development Tools kısmına tıklayın
-Gerekli ayrıntıları girerek yeni bir uygulama oluşturun""")
+print("""Lütfen tarayıcınızdan my.telegram.org adresine girin.
+Telegram hesabınızı kullanarak giriş yapın.
+API Development Tools kısmına tıklayın ve
+gerekli ayrıntıları girerek yeni bir uygulama oluşturun""")
 APP_ID = int(input("APP ID girin: "))
 API_HASH = input("API HASH girin: ")
 
